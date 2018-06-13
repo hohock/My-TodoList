@@ -1,6 +1,5 @@
 //
-//hohock_developmentだけにコメント追加
-
+//masterにcommit
 
 //  ViewController.swift
 //  My TodoList
