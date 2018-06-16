@@ -7,7 +7,6 @@
 //  Created by Daichi on 2018/06/11.
 //  Copyright © 2018年 Daichi. All rights reserved.
 //
-//takeru
 import UIKit
 
 //プロトコルを実装する旨の宣言を行う
@@ -15,9 +14,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //ToDoを格納した配列
     var todoList = [String]()
     
-    @IBOutlet weak var tableView: UITableView!
-        
-        
+    //storyboardと接続させました。
+    @IBOutlet var tableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +27,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func tapAddButton(_ sender: Any){
+    
+ //storyboardと接続させました。
+    @IBAction func tapAddButton(_ sender: Any) {
         //アラートダイアログを生成
         let alertController = UIAlertController(title: "ToDo追加", message: "ToDoを入力してください", preferredStyle:UIAlertControllerStyle.alert)
         //テキストエリアを追加
@@ -53,8 +54,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         alertController.addAction(cancelButton)
         
         //アラートダイアログを表示
-         present(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
+
     
     //テーブルの行数を返却する
     func tableView(_ rableView: UITableView, numberOfRowsInSection section: Int) -> Int{
