@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var todoList = [String]()
     
     @IBOutlet weak var tableView: UITableView!
-        
+    
         
 
     override func viewDidLoad() {
@@ -28,7 +28,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func tapAddButton(_ sender: Any){
+   
+    @IBAction func tapAddButton(_ sender: Any) {
         //アラートダイアログを生成
         let alertController = UIAlertController(title: "ToDo追加", message: "ToDoを入力してください", preferredStyle:UIAlertControllerStyle.alert)
         //テキストエリアを追加
