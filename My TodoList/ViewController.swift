@@ -7,7 +7,6 @@
 //  Created by Daichi on 2018/06/11.
 //  Copyright © 2018年 Daichi. All rights reserved.
 //
-// master changed!
 
 import UIKit
 
