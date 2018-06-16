@@ -7,7 +7,7 @@
 //  Created by Daichi on 2018/06/11.
 //  Copyright © 2018年 Daichi. All rights reserved.
 //
-
+//takeru
 import UIKit
 
 //プロトコルを実装する旨の宣言を行う
