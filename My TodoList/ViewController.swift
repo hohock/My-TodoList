@@ -95,7 +95,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         return cell
     }
-}
+
 
 func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let myTodo = todoList[indexPath.row]
@@ -114,8 +114,9 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let userDefaults = UserDefaults.standard
         userDefaults.set(data, forKey: "todoList")
         userDefaults.synchronize()
-    }
-
+    
+}
+}
 
 //独自クラスをシリアライズする際には、NSObjectを継承し
 //NSCodingプロトコルに準拠する必要がある
