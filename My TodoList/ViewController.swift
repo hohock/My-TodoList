@@ -45,7 +45,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             //OKボタンがタップされたときの処理
             if let textField = alertController.textFields?.first {
                 //ToDoの配列に入力値を挿入。先頭に挿入する
-                self.todoList.insert(textField.text!, at: 0)
+                //MyTodoクラスに強制キャスト
+                //self.todoList.insert(textField.text!, at: 0)
+                self.todoList.insert(textField.text as! MyTodo, at: 0)
                 
                 //テーブルに行が追加されたことをテーブルに通知
                 self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableViewRowAnimation.right)
